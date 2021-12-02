@@ -129,8 +129,8 @@
             '<!@(pkg-config libpng --libs)',
             '<!@(pkg-config pangocairo --libs)',
             '<!@(pkg-config freetype2 --libs)',
+            '-latomic'
 
-             '-latomic'
           ],
           'include_dirs': [
             '<!@(pkg-config cairo --cflags-only-I | sed s/-I//g)',
